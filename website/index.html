@@ -9,8 +9,24 @@
 <body>
     <header>
         <h1>Тестовый сайт</h1>
-        <button class="theme-toggle" onclick="changeTheme()">SUN</button>
     </header>
+    <main>
+        <h2>Регистрация</h2>
+        <form class="reg-form" id = "test-form">
+            <input type="email" id="test-form-email" placeholder="Введите email" required>
+            <input type="password" id="test-form-password" placeholder="Введите пароль" required>
+            <button type="submit">Создать аккаунт</button>
+            <label id="reg-form-status"></label>
+        </form>
+
+        <h2>Авторизация</h2>
+        <form class="reg-form" id="auth-form">
+            <input type="email" id="auth-form-email" placeholder="Введите email" required>
+            <input type="password" id="auth-form-password" placeholder="Введите пароль" required>
+            <button type="submit">Войти</button>
+            <label id="auth-form-status"></label>
+        </form>
+    </main>
     <div class="container">
         <div class="block light">
             <h2>Информация</h2>
@@ -38,6 +54,8 @@
             <button class = "light">Подробнее</button>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
